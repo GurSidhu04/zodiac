@@ -1,20 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Zodiac Checker</title>
+    <meta charset="utf-8">
+    <title>Chinese Zodiac Animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Chinese Zodiac Checker</h1>
+    <header>
+        <img src="zodiac.jpg" alt="Chinese Zodiac Animals">
+        <h1>Chinese Zodiac Animal</h1>
+    </header>
 
     <form id="zodiacForm">
-        <label for="year">Enter a Year:</label>
-        <input type="number" id="year" name="year" value="2024" required>
-        <button type="submit">Check Animal</button>
+        <p>
+            <label for="year">Enter Year:
+                <input type="number" id="year" name="year" max="4000" value="2024" required>
+            </label>
+        </p>
+        <input type="hidden" name="special" value="test special & normal characters!">
+        <p><button type="submit">Get Zodiac Animal</button></p>
     </form>
 
     <div id="result"></div>
+
+    <footer>
+        <img src="zodiac.jpg" alt="Chinese Zodiac Animals">
+    </footer>
 
     <script src="script.js"></script>
 </body>
